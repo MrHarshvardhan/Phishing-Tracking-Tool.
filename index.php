@@ -9,11 +9,11 @@ error_reporting(E_ALL);
 $error = "";
 $generated_session = session_id();
 $system_info = $_SERVER['HTTP_USER_AGENT'];
-$ip_info = file_get_contents("http://api.ipstack.com/" . $_SERVER['REMOTE_ADDR'] . "?access_key=20b1b415498dafa75723a46cd00c9eea");
+$ip_info = file_get_contents("http://api.ipstack.com/" . $_SERVER['REMOTE_ADDR'] . "?access_key=......");
 
-$dbname = "hpDB343";
-$dbuser = "newhpDB343";
-$dbpassword = "hQXwe4SrHQT";
+$dbname = "......";
+$dbuser = ".......";
+$dbpassword = ".......";
 $servername = "localhost";
 
 try {
@@ -45,7 +45,7 @@ if ($currentStatus !== 'COMPLETE') {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $secretKey = "6LdhNRgrAAAAAHejqRdrhbQBOQKenDQbzg88-jcb";
+    $secretKey = ".....";
 
     if (isset($_POST['g-recaptcha-response'])) {
         $captcha = $_POST['g-recaptcha-response'];
@@ -184,7 +184,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <input type="password" name="password" placeholder="Password" required />
         </div>
         <div class="recaptcha-wrapper">
-          <div class="g-recaptcha" data-sitekey="6LdhNRgrAAAAAOGj3RnsObF1YInxtc4GV6Y4JHhn"></div>
+          <div class="g-recaptcha" data-sitekey="......."></div>
         </div>
         <input type="submit" class="submit-btn" value="Sign in" name="btnSubmit" />
       </form>
